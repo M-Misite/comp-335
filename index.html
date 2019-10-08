@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .content {
+        font-size: large;
+        color: #f1f1f1;
+        width: 100%;
+    }
+    @media screen and (max-width: 992px) {
+        .media-h1-eg {
+            font-size: larger;
+        }
+        .media-h3-eg {
+            font-size: large;
+        }
+    }
+    /* make stuff smaller on smaller screen size */
+    @media screen and (max-width: 600px) {
+        .media-h1-eg {
+            font-size: large;
+        }
+        .media-h3-eg {
+            font-size: medium;
+        }
+        .media-text {
+            font-size: smaller;
+        }
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container col">
+    <video autoplay muted loop id="myVideo">
+        <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-3">
+        <span class="col-9"></span>
+        <span class="content col-3 py-0 media-text"><i class="fa fa-folder"></i>   Portfolio</span>
+    </div>
+    <div class="row">
+        <span class="col-9"></span>
+        <a class="content col-3 py-0 media-text" href="images/RESUME.pdf"><i class="fa fa-paperclip"></i>   Resume</a>
+    </div>
+    <div class="row">
+        <span class="col-9"></span>
+        <span class="content col-3 py-0 media-text"><i class="fa fa-book"></i>   Resources</span>
+    </div>
+    <div class="row">
+        <span class="col-9"></span>
+        <span class="content col-3 py-0 media-text"><i class="fa fa-address-book"></i>   Contact Me</span>
+    </div>
+    <div class="row mt-5">
+        <div class="col-10 text-center">
+            <h1 class="text-white media-h1-eg">Mike's WebPage</h1>
+            <h3 class="text-white media-h3-eg">Welcome to landing page</h3>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+</body>
+</html>
